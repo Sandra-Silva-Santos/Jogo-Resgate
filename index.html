@@ -1,0 +1,45 @@
+<!Doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jogo Naves Resgate">
+    <title>Resgate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        
+        <!-- div container !-->
+        <div id="fundoGame">
+            <!-- div fundoGame !-->
+            <div id="inicio" onclick="start()">
+                <h1> Resgate </h1> <!-- div inicio !-->
+                <p>
+                    <font color="red">W</font> Para movimentar o helicóptero para cima
+                    <br>
+                    <font color="red">S</font> Para movimentar o
+                    helicóptero para baixo <br>
+                    <font color="red">D</font> Para atirar
+                </p>
+                <button type="button" class="start">Iniciar</button>
+            </div> <!-- Fim da div inicio !-->
+        </div> <!-- Fim da div fundoGame !-->
+       </div> <!-- Fim da div container !-->
+    </div>
+    <!-- Sons do jogo !-->
+    <audio src="sons/som.mp3" preload="auto" id="somDisparo"></audio>
+    <audio src="sons/explosao.mp3" preload="auto" id="somExplosao"></audio>
+    <audio src="sons/musica_fundo.mp3" preload="auto" id="musica"></audio>
+    <audio src="sons/gameover.mp3" preload="auto" id="somGameover"></audio>
+    <audio src="sons/perdido.mp3" preload="auto" id="somPerdido"></audio>
+    <audio src="sons/resgate.mp3" preload="auto" id="somResgate"></audio>
+
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-collision.min.js"></script>
+</body>
+
+</html>

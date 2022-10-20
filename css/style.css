@@ -1,0 +1,371 @@
+@font-face {
+	font-family: Titulo;
+	src: url(../fontes/ANODETONOONE.TTF);
+}
+
+h1 {
+	font-family: Titulo;
+	font-size: 40px;
+	color: #603A03;
+}
+
+
+	
+
+#container {
+	display: flex;
+	width: 900px;
+	height: 600px;
+	position: relative;
+	margin: 0 auto;
+	
+	
+}
+
+
+#fundoGame {
+
+	border-radius: 5px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.7);
+	display: flex;
+	width: 900px;
+	height: 600px;
+	background-image: url(../imgs/fundo_game.jpg);
+
+
+}
+
+#jogador {
+	width: 256px;
+	height: 66px;
+	position: absolute;
+	left: 8px;
+	top: 179px;
+	background-image: url(../imgs/apache.png);
+
+}
+
+#inimigo1 {
+	width: 256px;
+	height: 66px;
+	position: absolute;
+	left: 689px;
+	top: 253px;
+	background-image: url(../imgs/inimigo1.png);
+
+}
+
+#inimigo2 {
+	width: 165px;
+	height: 70px;
+	position: absolute;
+	left: 775px;
+	top: 447px;
+	background-image: url(../imgs/inimigo2.png);
+}
+
+#amigo {
+	width: 44px;
+	height: 51px;
+	position: absolute;
+	left: 10px;
+	top: 464px;
+	background-image: url(../imgs/amigo.png);
+}
+
+#inicio {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width:350px;
+	height: 300px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align: center;
+	border-radius: 5px;
+	border-style:double;
+	
+}
+	
+
+.start {
+	width: 100px;
+	height: 40px;
+	background-color: #603A03;
+	margin-left: 35%;
+	box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 2);
+	color: #FFF;
+	font-family: Titulo;
+	font-size: 20px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.anima1 {
+	background-image: url(../imgs/helicoptero.png);
+	animation: play .5s steps(2) infinite;
+
+	-webkit-animation: play .5s steps(2) infinite;
+	-moz-animation: play .5s steps(2) infinite;
+	-ms-animation: play .5s steps(2) infinite;
+	-o-animation: play .5s steps(2) infinite;
+}
+
+@keyframes play {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -512px;
+	}
+}
+
+
+@-webkit-keyframes play {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -512px;
+	}
+}
+
+@-moz-keyframes play {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -512px;
+	}
+}
+
+@-ms-keyframes play {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -512px;
+	}
+}
+
+@-o-keyframes play {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -512px;
+	}
+}
+
+.anima2 {
+	background-image: url(../imgs/inimigo1.png);
+	animation: play .5s steps(2) infinite;
+	-webkit-animation: play .5s steps(2) infinite;
+	-moz-animation: play .5s steps(2) infinite;
+	-ms-animation: play .5s steps(2) infinite;
+	-o-animation: play .5s steps(2) infinite;
+}
+
+
+.anima3 {
+	background-image: url(../imgs/amigo.png);
+	animation: play2 .9s steps(12) infinite;
+	-webkit-animation: play2 .9s steps(12) infinite;
+	-moz-animation: play2 .9s steps(12) infinite;
+	-ms-animation: play2 .9s steps(12) infinite;
+	-o-animation: play2 .9s steps(12) infinite;
+}
+
+@keyframes play2 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -528px;
+	}
+}
+
+@-webkit-keyframes play2 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -528px;
+	}
+}
+
+@-moz-keyframes play2 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -528px;
+	}
+}
+
+@-ms-keyframes play2 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -528px;
+	}
+}
+
+@-o-keyframes play2 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -528px;
+	}
+}
+
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../imgs/disparo.png);
+}
+
+#explosao1 {
+	width: 15px;
+	height: 87px;
+	position: absolute;
+}
+
+#explosao2 {
+	width: 15px;
+	height: 87px;
+	position: absolute;
+}
+
+#explosao3 {
+	width: 44px;
+	height: 51px;
+	position: absolute;
+}
+
+.anima4 {
+	width: 44px;
+	height: 51px;
+	background-image: url(../imgs/amigo_explosao.png);
+	animation: play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+	-moz-animation: play3 .5s steps(7) infinite;
+	-ms-animation: play3 .5s steps(7) infinite;
+	-o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -308px;
+	}
+}
+
+@-webkit-keyframes play3 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -308px;
+	}
+}
+
+@-moz-keyframes play3 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -308px;
+	}
+}
+
+@-ms-keyframes play3 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -308px;
+	}
+}
+
+@-o-keyframes play3 {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -308px;
+	}
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 25px;
+	top: 550px;
+
+}
+
+h1 {
+	margin: 0.25em;
+	
+}
+
+h2{
+	font-family: Titulo;
+	font-size: 20px;
+	color: #FFF
+}
+
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px;
+}
+
+h3 {
+	font-family: Titulo;
+	font-size: 20px;
+	color: #603A03;
+
+}
+
+#fim {
+	width: 350px;
+	height: 200px;
+	background-color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+
+	
